@@ -1,4 +1,4 @@
-# EECS_605
+# EECS_605_dashboard_demo
 
 Required:
 - Python 3.x
