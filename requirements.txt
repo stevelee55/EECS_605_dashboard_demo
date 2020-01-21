@@ -1,8 +1,6 @@
-dash
-dash-renderer
-dash-html-components
-dash-core-components
-plotly
-pandas_datareader
-
-need to specify the versions
+dash==1.8.0
+dash-renderer==1.2.3
+dash-html-components==1.0.2
+dash-core-components==1.7.0
+plotly==4.4.1
+pandas_datareader==0.8.1
