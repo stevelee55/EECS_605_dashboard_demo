@@ -3,4 +3,6 @@ dash-renderer
 dash-html-components
 dash-core-components
 plotly
+pandas_datareader
 
+need to specify the versions

@@ -67,9 +67,60 @@ app.layout = html.Div(
 			style={
 				'textAlign': 'center'
 			}
-		)
+		),
+		html.Div(
+			id="graph-button-container",
+			children=[
+				html.Button(
+					"Plot Graph",
+					id="graph-feature-demo",
+				)
+			],
+			style={
+				'textAlign': 'center',
+				'margin-left': 'auto',
+				'margin-right': 'auto'
+			}
+		),
+		dcc.Input(id='input', value='', type='text'),
+		html.Div(id='output-graph'),
+
 	]
 )
+
+
+import pandas_datareader.data as web
+import datetime
+@app.callback(
+    Output(component_id='output-graph', component_property='children'),
+    [Input(component_id='input', component_property='value'), Input("graph-feature-demo", "n_clicks")]
+)
+def graph_demo_button(input_data, n_clicks):
+	try:
+		if int(n_clicks) > 0:
+			start = datetime.datetime(2015, 1, 1)
+			end = datetime.datetime.now()
+			df = web.DataReader(input_data, 'stooq', start, end)
+			# return str(df)
+			df.reset_index(inplace=True)
+			df.set_index("Date", inplace=True)
+			df = df.drop("Volume", axis=1)
+
+			return dcc.Graph(
+				id='example-graph',
+				figure={
+					'data': [
+						{'x': df.index, 'y': df.Close, 'type': 'line', 'name': input_data},
+					],
+					'layout': {
+						'title': input_data
+					}
+				}
+			)
+		else:
+			return
+	except:
+		return
 
 import base64
 
