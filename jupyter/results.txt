@@ -1,0 +1,10 @@
+class=5 ; probability=0.645890 
+class=0 ; probability=0.249611 
+class=3 ; probability=0.052108 
+class=6 ; probability=0.025015 
+class=8 ; probability=0.016893 
+class=1 ; probability=0.006056 
+class=2 ; probability=0.002564 
+class=9 ; probability=0.001161 
+class=7 ; probability=0.000461 
+class=4 ; probability=0.000242 

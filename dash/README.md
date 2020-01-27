@@ -1,10 +1,26 @@
-#EECS_605
+# EECS_605
 
-Required:
+Dashboard Demo for EECS 605 Projects.
+
+## Ways to run Dashboard server
+
+1) Using local machine \
+2) Using Docker on top of local machine
+
+### 1) Running Dashboard server using local machine
+##### Required:
+- Python 3.x
+- Pip
+
+##### How to Run:
+...
+
+
+### 2) Running Dashboard server using local machine
+##### Required:
 - Python 3.x
 - Pip
 - Docker
-
 
 How to Run:
 
