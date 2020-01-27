@@ -1,4 +1,6 @@
-# EECS_605
+
+# EECS_605_dashboard_demo
+
 
 Dashboard Demo for EECS 605 Projects.
 
