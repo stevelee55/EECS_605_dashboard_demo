@@ -18,4 +18,4 @@ RUN apt -y install net-tools
 # Installing requirements.txt packages.
 RUN pip3 install -r /server/requirements.txt
 
-CMD python3 server/demo.py
+CMD python3 server/app.py

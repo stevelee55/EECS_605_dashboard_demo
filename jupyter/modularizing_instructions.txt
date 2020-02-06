@@ -1,0 +1,7 @@
+
+1) Create a file called "eecs605.py".
+2) Copy "EECS_605_dashboard_demo.ipynb" code into "eecs605.py".
+3) Remove "%matplotlib inline" in "eecs605.py".
+4) Create a new notebook and import "eecs605.py" by typing "import eecs605".
+5) Add "%matplotlib inline" in "eecs605.py".
+6) Lastly, add "eecs605.createDashBoard()" in "eecs605.py".

@@ -184,5 +184,7 @@ def download_button(n_clicks):
 		return
 
 if __name__ == '__main__':
-	app.run_server(debug=True,port=8080,host='0.0.0.0')
-
+	try:
+		app.run_server(debug=True,port=int(os.environ["$PORT"]),host='0.0.0.0')
+	except:
+		app.run_server(debug=True,port=8080,host='0.0.0.0')
